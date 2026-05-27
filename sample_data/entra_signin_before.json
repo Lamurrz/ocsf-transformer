@@ -1,0 +1,40 @@
+[
+  {
+    "id": "aaaabbbb-1234-5678-abcd-000000000001",
+    "createdDateTime": "2024-05-01T12:00:00Z",
+    "userDisplayName": "Bob Jones",
+    "userPrincipalName": "bob@contoso.com",
+    "userId": "user-uid-001",
+    "appDisplayName": "Microsoft Teams",
+    "appId": "app-uid-001",
+    "ipAddress": "198.51.100.42",
+    "location": {
+      "city": "New York",
+      "state": "NY",
+      "countryOrRegion": "US",
+      "geoCoordinates": {
+        "latitude": 40.71,
+        "longitude": -74.0
+      }
+    },
+    "status": {
+      "errorCode": 0,
+      "failureReason": null
+    },
+    "conditionalAccessStatus": "success",
+    "authenticationRequirement": "multiFactorAuthentication",
+    "riskLevelDuringSignIn": "none",
+    "clientAppUsed": "Browser",
+    "deviceDetail": {
+      "deviceId": "dev-001",
+      "displayName": "LAPTOP-BOB",
+      "operatingSystem": "Windows 11",
+      "browser": "Edge 124"
+    },
+    "mfaDetail": {
+      "authMethod": "PhoneAppNotification",
+      "authDetail": "Approved"
+    },
+    "tokenIssuanceType": "AzureAD"
+  }
+]
