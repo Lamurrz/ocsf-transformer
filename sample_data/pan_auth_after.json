@@ -1,0 +1,124 @@
+[
+  {
+    "ocsf_version": "1.3.0",
+    "class_uid": 4001,
+    "category_uid": 4,
+    "activity_id": 1,
+    "activity_name": "Open",
+    "time": 1714566895123,
+    "metadata": {
+      "uid": "a93ad200-98ae-ca08-044a-e54f2859227a",
+      "version": "1.3.0",
+      "product": {
+        "vendor_name": "Palo Alto Networks",
+        "name": "Palo Alto Networks"
+      },
+      "processed_time": 1779915805538,
+      "schema_url": "https://schema.ocsf.io"
+    },
+    "unmapped": {},
+    "user": {
+      "name": "alice@contoso.com",
+      "uid": "alice",
+      "type": "User",
+      "type_id": 1
+    },
+    "src_endpoint": {
+      "ip": "10.0.0.5",
+      "type": "SSLVPN"
+    },
+    "dst_endpoint": {
+      "name": "PA-VM-01",
+      "uid": "015351000012345",
+      "hostname": "PA-VM-01"
+    },
+    "connection_info": {
+      "auth_protocol": "RADIUS",
+      "auth_policy": "gp-auth-policy",
+      "auth_object": "GlobalProtect",
+      "auth_id": "7890",
+      "client_type": "SSLVPN",
+      "factor_no": 2,
+      "is_mfa": true,
+      "mfa_factor": 2
+    },
+    "device": {
+      "name": "PA-VM-01",
+      "uid": "015351000012345",
+      "type": "Firewall",
+      "type_id": 9,
+      "vsys": "vsys1",
+      "vsys_id": 1
+    },
+    "policy": {
+      "name": "gp-auth-policy",
+      "uid": "abc-123-def-456"
+    },
+    "status": "Success",
+    "status_id": 1,
+    "severity": "Informational",
+    "severity_id": 1,
+    "message": "PAN-OS auth event: auth-success for user alice@contoso.com"
+  },
+  {
+    "ocsf_version": "1.3.0",
+    "class_uid": 4001,
+    "category_uid": 4,
+    "activity_id": 4,
+    "activity_name": "Fail",
+    "time": 1714566910000,
+    "metadata": {
+      "uid": "a249766b-9b0e-5b4b-0cd1-6a65a7d82845",
+      "version": "1.3.0",
+      "product": {
+        "vendor_name": "Palo Alto Networks",
+        "name": "Palo Alto Networks"
+      },
+      "processed_time": 1779915805538,
+      "schema_url": "https://schema.ocsf.io"
+    },
+    "unmapped": {},
+    "user": {
+      "name": "alice@contoso.com",
+      "uid": "alice",
+      "type": "User",
+      "type_id": 1
+    },
+    "src_endpoint": {
+      "ip": "10.0.0.5",
+      "type": "SSLVPN"
+    },
+    "dst_endpoint": {
+      "name": "PA-VM-01",
+      "uid": "015351000012345",
+      "hostname": "PA-VM-01"
+    },
+    "connection_info": {
+      "auth_protocol": "RADIUS",
+      "auth_policy": "gp-auth-policy",
+      "auth_object": "GlobalProtect",
+      "auth_id": "7890",
+      "client_type": "SSLVPN",
+      "factor_no": 1,
+      "is_mfa": false,
+      "mfa_factor": null
+    },
+    "device": {
+      "name": "PA-VM-01",
+      "uid": "015351000012345",
+      "type": "Firewall",
+      "type_id": 9,
+      "vsys": "vsys1",
+      "vsys_id": 1
+    },
+    "policy": {
+      "name": "gp-auth-policy",
+      "uid": "abc-123-def-456"
+    },
+    "status": "Failure",
+    "status_id": 2,
+    "severity": "Low",
+    "severity_id": 2,
+    "message": "PAN-OS auth event: auth-fail for user alice@contoso.com"
+  }
+]
