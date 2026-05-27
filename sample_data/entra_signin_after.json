@@ -1,0 +1,66 @@
+{
+  "ocsf_version": "1.3.0",
+  "class_uid": 3002,
+  "category_uid": 3,
+  "activity_id": 4,
+  "activity_name": "MFA Challenge",
+  "time": 1714564800000,
+  "metadata": {
+    "uid": "64cc075b-2ab0-8e39-c32b-6ae1b91d6fdb",
+    "version": "1.3.0",
+    "product": {
+      "vendor_name": "Microsoft Entra ID",
+      "name": "Microsoft Entra ID"
+    },
+    "processed_time": 1779915805596,
+    "schema_url": "https://schema.ocsf.io"
+  },
+  "unmapped": {},
+  "user": {
+    "uid": "user-uid-001",
+    "name": "bob@contoso.com",
+    "full_name": "Bob Jones",
+    "type": "User",
+    "type_id": 1
+  },
+  "service": {
+    "name": "Microsoft Teams",
+    "uid": "app-uid-001"
+  },
+  "src_endpoint": {
+    "ip": "198.51.100.42",
+    "location": {
+      "city": "New York",
+      "region": "NY",
+      "country": "US",
+      "lat": 40.71,
+      "long": -74.0
+    }
+  },
+  "device": {
+    "uid": "dev-001",
+    "name": "LAPTOP-BOB",
+    "os": {
+      "name": "Windows 11"
+    },
+    "type": "Browser"
+  },
+  "authentication": {
+    "auth_protocol": "multiFactorAuthentication",
+    "token_issuance_type": "AzureAD",
+    "mfa_method": "PhoneAppNotification",
+    "mfa_detail": "Approved",
+    "conditional_access": "success"
+  },
+  "status": "Success",
+  "status_id": 1,
+  "status_code": "0",
+  "severity": "None",
+  "severity_id": 1,
+  "risk_details": {
+    "level_during_signin": "none",
+    "level_aggregated": null,
+    "state": null,
+    "detail": null
+  }
+}
